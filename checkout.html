@@ -16,59 +16,62 @@
     ></script>
     <title>Checkout</title>
   </head>
-  <body>
-    <h1 id="checkout-title"></h1>
-    <main class="container d-flex justify-content-center">
-      <sectin>
-        <article
-          id="product-panel"
-          style="background-color: rgb(241, 237, 237)"
-        >
-          <div class=" border border-2 border-dark  bg-transparent card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="./img/photo1.png"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Backpag</h5>
-                  <div class="product-price">
-                    <p>
-                      <strong class="text-warning">25.98</strong>
-                      <span class="text-decoration-line-through">34.99</span>
-                    </p>
-                    <div>
-                      <div
-                        class="border border-1 d-flex justify-content-center p-2"
-                      >
-                        <div class="quantity-controller">
-                          <button class="btn btn-secondary btn-sm">
-                            <i class="fas fa-minus"></i>
-                          </button>
-                          <p  class="d-inline mx-4" id="product-quantity">1</p>
-                          <button class="btn btn-secondary btn-sm">
-                            <i class="fas fa-plus"></i>
-                          </button>
-                        </div>
-                      </div>
 
-                      <div class="product-removeal mt-4">
-                        <button class="remove-product btn btn-danger btn-sm w-100">Remove</button>
-                      </div>
-                      <div class="product-line-price mt-2">Product Total:$ <span>25.98</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <body>
+    <h1 id="checkout-title" class="text-center m-4">Checkout</h1>
+    <main class="container d-flex justify-content-center">
+      <section style="background: rgb(241, 237, 237)">
+        <article class="mb-4" id="add-product">
+          <form class="p-2">
+            <div class="mb-3">
+              <label for="add-name" class="form-label"
+                >Product Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="add-name"
+                
+              />
+              
             </div>
-          </div>
+            <div class="mb-3">
+              <label for="add-price" class="form-label"
+                >Product Price</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="add-price"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="add-quantity" class="form-label"
+                >Product Price</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="add-quantity"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="add-image" class="form-label"
+                >Product Price</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="add-image"
+              />
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </article>
-        <article id="cart-prices"></article>
-      </sectin>
+        <article id="product-panel"></article>
+        <article id="card-prices"></article>
+      </section>
     </main>
     <script src="checkout.js"></script>
   </body>
